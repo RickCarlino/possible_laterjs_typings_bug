@@ -8,6 +8,11 @@ Current LaterJS typings are not compatible with `strictNullChecks` on newer vers
 1. `npm install`
 2. Compile with `node_modules/typescript/bin/tsc`
 
+This will result in numerous null check errors such as the following:
+
+```
+node_modules/@types/later/index.d.ts(138,9): error TS2411: Property 'Y_b' of type 'number[] | undefined' is not assignable to string index type 'number[]'.
+```
 ## Remedy
 
 There are two solutions:
@@ -23,4 +28,4 @@ There are two solutions:
         [ timeperiodAndModifierName: string ]: number[];
 ```
 
-The `Custom Time Periods and Modifiers` functionality might be attainable via interface extension.
+The `Custom Time Periods and Modifiers` functionality might be attainable via interface extension instead of treating the object as a map.
