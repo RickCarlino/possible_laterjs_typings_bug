@@ -1,0 +1,25 @@
+{
+  "name": "temp_laterjs_error",
+  "version": "1.0.0",
+  "description": "Current LaterJS typings are not compatible with `strictNullChecks` on newer versions of TSC.",
+  "main": "errors.js",
+  "dependencies": {
+    "@types/later": "^1.2.0",
+    "later": "^1.2.0",
+    "typescript": "^2.1.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RickCarlino/possible_laterjs_typings_bug.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RickCarlino/possible_laterjs_typings_bug/issues"
+  },
+  "homepage": "https://github.com/RickCarlino/possible_laterjs_typings_bug#readme"
+}
