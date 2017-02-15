@@ -15,7 +15,7 @@ node_modules/@types/later/index.d.ts(138,9): error TS2411: Property 'Y_b' of typ
 ```
 ## Remedy
 
-There are two solutions:
+Several actions will make the compilation errors go away:
 
 0. Change `strictNullChecks` to `false`. Compilation completes.
 1. Comment out the following lines within `interface Recurrence`:
@@ -27,5 +27,5 @@ There are two solutions:
          */
         [ timeperiodAndModifierName: string ]: number[];
 ```
-
-The `Custom Time Periods and Modifiers` functionality might be attainable via interface extension instead of treating the object as a map.
+2. Change line 145 to `[timeperiodAndModifierName: string]: number[] | undefined;`.
+3. Use the `extends` keyword for custom changes.
